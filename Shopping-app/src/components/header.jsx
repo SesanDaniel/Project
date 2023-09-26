@@ -1,6 +1,5 @@
 import Button from "./buttons";
-import logo from "../../assets/images/APPARELS.png";
-import Nav from "./navbar";
+import logo from "../assets/images/APPARELS.png";
 
 function Header() {
   return (
@@ -12,7 +11,6 @@ function Header() {
         <Button text="About" />
         <Button text="Contact" />
       </div>
-      <Nav />
     </div>
   );
 }

@@ -8,17 +8,27 @@ html {
   font-size: 10px;
 }
 
+body {
+  max-width: 180rem;
+}
+
+.main-section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
 .header {
   background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 6rem;
-  /* position: relative; */
+  padding: 2rem 6rem;
+  width: 100%;
 }
 
 .header img {
-  width: 5rem;
+  width: 7rem;
   /* mix-blend-mode: darken; */
 }
 
@@ -30,12 +40,13 @@ html {
   font-size: 1.5rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  outline: none;
 }
 
 .btn:hover {
-  background-color: #fff;
-  color: #222;
-  transition: 0.5s;
+  background-color: #00827f;
+  color: #fff;
+  transition: 0.7s;
 }
 
 .btn:nth-child(1) {
@@ -56,17 +67,50 @@ html {
 
 .burger-bars {
   /* background-color: greenyellow; */
-  height: 5rem;
+  float: right;
+  height: 3rem;
   width: 4rem;
   display: flex;
   /* flex-flow: column nowrap; */
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  position: absolute;
+  margin-top: 4rem;
+  left: 85%;
+  /* visibility: hidden; */
+  z-index: 2;
+  cursor: pointer;
+  display: none;
 }
 
 .menue-bars {
-  width: 4rem;
-  height: .5rem;
-  color: #fff;
+  width: 100%;
+  height: 0.4rem;
+  background-color: gold;
+  margin-bottom: 0.1rem;
+}
+
+
+.clicked {
+  background-color: purple;
+
+}
+
+.clicked:first-child {
+  transform: rotateX('45deg');
+}
+
+.visible {
+  visibility: visible;
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .btn {
+    visibility: hidden;
+  }
+
+  .burger-bars {
+    display: flex;
+  }
 }
