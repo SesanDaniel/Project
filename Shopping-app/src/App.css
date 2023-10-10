@@ -19,17 +19,51 @@ body {
 }
 
 .header {
-  background-color: black;
-  display: flex;
+  width:  100%;
+  height: 20vh;
+  /* position: fixed; */
+}
+
+.header-items {
+  width: 70%;
+  margin: auto;
+  /* background-color: #ffff; */
+  background-color: aquamarine;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 6rem;
-  width: 100%;
+  padding: 0rem 2rem;
+  display: flex;
 }
 
 .header img {
   width: 7rem;
   /* mix-blend-mode: darken; */
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #222;
+  font-size: 1.7rem;
+  padding: 0.5rem 1rem;
+}
+.nav-list a:hover {
+  background-color: rgb(6, 6, 92);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  transition: 0.7s;
+}
+
+.nav-list li {
+  display: flex;
+  text-decoration: none;
+  margin-left: 1rem;
 }
 
 .btn {

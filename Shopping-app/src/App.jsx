@@ -1,14 +1,12 @@
 import Header from "./components/header";
 import Nav from "./components/navbar";
-import background from "./assets/images/pexels-oliver-sjöström-1078983.jpg";
+// import background from "./assets/images/pexels-oliver-sjöström-1078983.jpg";
 import "./App.css";
 
 function App() {
   return (
     <div
-      className="main-section"
-      style={{ backgroundImage: `url(${background})` }}
-    >
+      className="main-section">
       <Nav />
       <Header />
       <main>
